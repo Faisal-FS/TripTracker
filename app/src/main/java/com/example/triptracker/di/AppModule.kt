@@ -3,6 +3,8 @@ package com.example.triptracker.di
 import android.content.Context
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.triptracker.data.MainRepository
+import com.example.triptracker.data.local.RunDao
 import com.example.triptracker.data.local.TrackerDatabase
 import com.example.triptracker.others.Constants.DATABASE_NAME
 import dagger.Module
@@ -25,4 +27,9 @@ object AppModule {
     @Singleton
     @Provides
     fun provideRunDao(db: TrackerDatabase) = db.getRunDao()
+
+    @Singleton
+    @Provides
+    fun provideMainRepository(runDao: RunDao) = MainRepository(runDao)
+
 }

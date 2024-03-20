@@ -54,6 +54,10 @@ dependencies {
     implementation libs.androidx.navigation.fragment.ktx
     implementation libs.androidx.navigation.ui.ktx
 
+    implementation libs.timber
+
+    implementation libs.easypermissions
+
     implementation libs.bundles.room
 
     kapt libs.room.compiler

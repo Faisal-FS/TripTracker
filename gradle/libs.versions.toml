@@ -14,6 +14,8 @@ navigationFragmentKtx = "2.7.7"
 navigationUiKtx = "2.7.7"
 roomVersion = "2.6.1"
 hiltVersion = "2.51"
+timberVersion = "5.0.1"
+easypermissions = "3.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,6 +34,8 @@ room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomVersi
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomVersion" }
 hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVersion" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hiltVersion" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timberVersion" }
+easypermissions = { group = "pub.devrel", name = "easypermissions", version.ref = "easypermissions" }
 
 [bundles]
 room = ["room-ktx", "room-runtime"]
